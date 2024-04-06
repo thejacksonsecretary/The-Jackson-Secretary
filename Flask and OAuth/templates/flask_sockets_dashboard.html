@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <title>Communication with Flask!</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.1/socket.io.js"></script>
+  <script type="text/javascript">
+
+    var socket = io()
+
+    function sendUp(){
+      socket.emit("value_update", {"value": 1});
+    }
+
+    function sendDown(){
+      socket.emit("value_update", {"value": -1});
+    }
+
+    function recieve(data){
+      alert(data.value);
+    }
+
+    socket.on("button_click_response", recieve)
+
+  </script>
+
+  <button type="button" onclick="sendUp()">+1</button>
+  <button type="button" onclick="sendDown()">-1</button>
+
+</html>
