@@ -1,0 +1,40 @@
+body {
+    background-color: #183a34;
+    background: linear-gradient(to left, #183a34, #086863);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #ebf3e7;
+
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+}
+
+.center {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #ebf3e7;
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+.input {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type=text] {
+    border: 2px #292e2d;
+    border-radius: 4px;
+}
