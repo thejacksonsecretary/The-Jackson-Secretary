@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="/static/style.css">
-    <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
 
     <meta charset="UTF-8">
     <title>Jackson Secretary</title>
@@ -11,8 +11,11 @@
   </head>
 
   <body>
-    {{ username }} <img src="{{ pfp_url }}" class="pfp_image"><br>
-    <a href="/logout">Log out</a>
+    <div class="body">
+      <span style="font-size:25px;">{{ username }} </span> <img src="{{ pfp_url }}" class="pfp_image"><br>
+      <a href="/calendar">Calendar</a> |
+      <a href="/logout">Log out</a>
+    </div>
 
     <div class="center">
       Ask anything about your calendar...
