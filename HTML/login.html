@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/style.css">
     <script src="https://kit.fontawesome.com/d8eb899f4d.js" crossorigin="anonymous"></script>
 
     <meta charset="UTF-8">
-    <title>Jackson Secretary - Home</title>
+    <title>Jackson Secretary</title>
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-</head>
-  
-  <!-- redir if logged in already -->
+  </head>
 
-    <body>
+  <body>
     <div class="body">
-      Jackson Secretary
+      {{ username }} <img src="{{ pfp_url }}" class="pfp_image"><br>
+      <a href="/logout">Log out</a>
     </div>
 
-    <div class="center">
-      Sign in...
+    <div class="center2">
+      {{ inp }}
     </div>
 
-    
-    <!-- <div class="input">
-        <form action="" method="post">
-        <input type="text" id="inputbox" name="input" autocomplete="off" size = 100 placeholder="Schedule birthday party at 8am">
+    <div class="response">
+      {{ response }}
+    </div>
+
+    <form method="post" action="/response">
+      <fieldset class="input2">
+        <legend>Prompt</legend>
+        <input type="text" id="inputbox" name="input" autocomplete="off" size = 100 class = "inputbox" placeholder="Schedule something else">
         <input type="submit" value="Submit">
-    </form>-->
+      </fieldset>
+    </form>
 
-    <fieldset class="input">
-        <legend>Sign in with Google</legend>
-        something idk
-    </fieldset>
 
-    
-    </body>
+  </body>
 </html>
