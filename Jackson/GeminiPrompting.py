@@ -3,6 +3,12 @@ import ast
 from datetime import date
 import json
 
+def dumpTruck(user):
+    with open("data_file.json", "r") as file:
+        data_string = file.read()
+    data = json.loads(data_string)
+    return data[user]
+
 def addToDB(user, newData):
     with open("data_file.json", "r") as file:
         data_string = file.read()
@@ -19,12 +25,6 @@ def bgInfoStringGenerator(userData):
   for i in range(len(userData)):
     bgInfoString = bgInfoString + userData[i][0] + "," + userData[i][1] + "," + userData[i][2]+";"
   return bgInfoString
-
-def dumpTruck(user):
-    with open("data_file.json", "r") as file:
-        data_string = file.read()
-    data = json.loads(data_string)
-    return data[user]
 
 def prompt(prompt, user):
     #Obtain userData
@@ -58,3 +58,4 @@ Context: ''' + str(userData) + '''Prompt:''' + prompt + ''' Today's date is ''' 
         with open("data_file.json", "w") as write_file:
             json.dump(data, write_file)
     return responseForUser
+
