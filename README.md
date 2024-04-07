@@ -1,4 +1,4 @@
-# Jackson
+# Jackson 🗓️
 
 Jackson is an AI secretary making calendar organization easy.
 
