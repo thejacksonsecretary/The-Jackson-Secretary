@@ -20,14 +20,6 @@ body {
     font-size: 20px;
 }
 
-.title {
-  text-align: center;
-    font-family: "Poppins", sans-serif;
-  font-size: 70px;
-  font-weight: 500;
-  animation: fadeIn 2s;
-}
-
 a {
     color: #ebf3e7;
     font-family: "Poppins", sans-serif;
@@ -38,10 +30,34 @@ a {
     color: white;
 }
 
+.title {
+    text-align: center;
+    font-size: 20px;
+}
+
+.text {
+  animation: fadeIn 2s;
+  color: #ebf3e7;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  padding-top: 42px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.login_title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  animation: fadeIn 2s;
+}
+
 .center {
     animation: movingFadeIn 2s;
     position: absolute;
-    top: 70%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -60,6 +76,28 @@ a {
 .input {
     animation: fadeIn 2s;
     position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.login_center {
+    animation: movingFadeIn 2s;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #ebf3e7;
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+.login_input {
+    animation: fadeIn 2s;
+    position: absolute;
     top: 82%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -68,14 +106,19 @@ a {
 
 input[type=text] {
     border: 2px #292e2d;
-    border-radius: 4px;
     background-color: #183a34;
 }
 
 fieldset > input{
+    border-radius: 10px;
     border: none;
     outline: none;
     width: 100%;
+}
+
+fieldset{
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
 }
 
 .input2 {
@@ -117,15 +160,4 @@ fieldset > input{
     font-size: 25px;
     text-align: center;
     overflow:scroll;
-}
-
-.text {
-  animation: fadeIn 2s;
-  color: #ebf3e7;
-  font-family: "Poppins", sans-serif;
-  font-size: 32px;
-  text-align: center;
-  padding-top: 42px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
