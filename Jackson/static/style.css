@@ -27,7 +27,7 @@ a {
 
 .inputbox{
     animation: fadeIn 2s;
-    color: white;
+    resize:none;
 }
 
 .title {
