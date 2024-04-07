@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="./static/style.css">
 
@@ -12,10 +11,8 @@
   </head>
 
   <body>
-    <div>
       {{ username }} <img src="{{ pfp_url }}" class="pfp_image"><br>
       <a href="/logout">Log out</a>
-    </div>
 
     <div class="center2">
       {{ inp }}
@@ -27,7 +24,7 @@
 
     <form method="post" action="/response">
       <fieldset class="input2">
-        <legend>Prompt</legend>
+        <legend>Schedule</legend>
         <input type="text" id="inputbox" name="input" autocomplete="off" size = 100 class = "inputbox" placeholder="Schedule something else">
         <input type="submit" value="Submit">
       </fieldset>
