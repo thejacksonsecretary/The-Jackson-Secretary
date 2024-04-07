@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="static/style.css">
-    <script src="https://kit.fontawesome.com/d8eb899f4d.js" crossorigin="anonymous"></script>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="/static/style.css">
+        <script src="https://kit.fontawesome.com/d8eb899f4d.js" crossorigin="anonymous"></script>
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
 
-    <meta charset="UTF-8">
-    <title>Jackson Secretary</title>
+        <meta charset="UTF-8">
+        <title>Jackson Secretary - Home</title>
 
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  </head>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    </head>
 
-  <body>
-    <div class="body">
-      {{ username }} <img src="{{ pfp_url }}" class="pfp_image"><br>
-      <a href="/logout">Log out</a>
-    </div>
+    <body>
+        <div class="body">
+          Jackson Secretary
+        </div>
 
-    <div class="center2">
-      {{ inp }}
-    </div>
+        <div class="center">
+            Sign in...
 
-    <div class="response">
-      {{ response }}
-    </div>
+            <div id="g_id_onload"
+                 data-client_id="665033402801-0bb1erkdpbvp2act2pq4flkattrukfj6.apps.googleusercontent.com"
+                 data-context="signin"
+                 data-ux_mode="popup"
+                 data-login_uri="https://thejacksonsecretary.pythonanywhere.com/main"
+                 data-auto_prompt="false">
+            </div>
 
-    <form method="post" action="/response">
-      <fieldset class="input2">
-        <legend>Prompt</legend>
-        <input type="text" id="inputbox" name="input" autocomplete="off" size = 100 class = "inputbox" placeholder="Schedule something else">
-        <input type="submit" value="Submit">
-      </fieldset>
-    </form>
-
-
-  </body>
+            <div class="g_id_signin"
+                 data-type="standard"
+                 data-shape="pill"
+                 data-theme="outline"
+                 data-text="signin_with"
+                 data-size="large"
+                 data-logo_alignment="left">
+            </div>
+        </div>
+    </body>
 </html>
