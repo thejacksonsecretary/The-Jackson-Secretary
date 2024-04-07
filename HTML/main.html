@@ -3,8 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/d8eb899f4d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/style.css">
 
     <meta charset="UTF-8">
     <title>Jackson Secretary</title>
@@ -14,20 +13,22 @@
 
   <body>
     <div class="body">
-      Account name <i class="fa-solid fa-user"></i><br>
-      Log out
+      {{ username }} <img src="{{ pfp_url }}" class="pfp_image"><br>
+      <a href="/logout">Log out</a>
     </div>
 
     <div class="center">
-      Ask me anything about your schedule
+      Ask anything about your calendar...
     </div>
 
-    <fieldset class="input">
-      <legend>Prompt</legend>
-      <input type="text" id="inputbox" name="input" autocomplete="off" size = 100 class = "inputbox" placeholder="Schedule birthday party at 8am">
-      <input type="submit" value="Submit">
-    </fieldset>
+    <form method="post" action="/response" class="input">
+        <fieldset>
+          <legend>Prompt</legend>
+          <input type="text" id="inputbox" name="input" autocomplete="off" size = 100 class="inputbox" placeholder="Schedule birthday party at 8am">
+          <input type="submit" value="Submit">
+        </fieldset>
+    </form>
 
-    
+
   </body>
 </html>
