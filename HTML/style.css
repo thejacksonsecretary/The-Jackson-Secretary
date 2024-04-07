@@ -20,6 +20,11 @@ body {
     font-size: 20px;
 }
 
+a {
+    color: #ebf3e7;
+    font-family: "Poppins", sans-serif;
+}
+
 .inputbox{
     animation: fadeIn 2s;
     color: white;
@@ -41,6 +46,12 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 48px;
     text-align: center;
+}
+
+.pfp_image {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 
 .input {
