@@ -20,11 +20,6 @@ body {
     font-size: 20px;
 }
 
-a {
-    color: #ebf3e7;
-    font-family: "Poppins", sans-serif;
-}
-
 .inputbox{
     animation: fadeIn 2s;
     color: white;
