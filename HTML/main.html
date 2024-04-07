@@ -3,13 +3,12 @@
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="./static/style.css">
-    <script src="https://kit.fontawesome.com/d8eb899f4d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
 
     <meta charset="UTF-8">
-    <title>Jackson Secretary - Home</title>
+    <title>Jackson Secretary</title>
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
 
   <body>
@@ -18,20 +17,16 @@
       <a href="/logout">Log out</a>
     </div>
 
-    <div class="center2">
-      {{ inp }}
+    <div class="center">
+      Ask anything about your calendar...
     </div>
 
-    <div class="response">
-      {{ response }}
-    </div>
-
-    <form method="post" action="/response">
-      <fieldset class="input2">
-        <legend>Prompt</legend>
-        <input type="text" id="inputbox" name="input" autocomplete="off" size = 100 class = "inputbox" placeholder="Schedule something else">
-        <input type="submit" value="Submit">
-      </fieldset>
+    <form method="post" action="/response" class="input">
+        <fieldset>
+          <legend>Prompt</legend>
+          <input type="text" id="inputbox" name="input" autocomplete="off" size = 100 class="inputbox" placeholder="Schedule birthday party at 8am">
+          <input type="submit" value="Submit">
+        </fieldset>
     </form>
 
 
