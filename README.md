@@ -8,4 +8,4 @@ This github contains server code that hosts Jackson. A more permanent hosting so
 
 # Credits
 
-Created by craisin (Cayden Yap), something (Sumuk Rao), antiquail, and etefoaa
+Created by craisin (Cayden Yap), something (Sumuk Rao), antiquail0, and etefoaa
